@@ -2,7 +2,6 @@ FROM ubuntu:22.04
 MAINTAINER uli.hitzel@gmail.com
 EXPOSE 8080 5901
 ARG DEBIAN_FRONTEND=noninteractive
-ENV TZ=Asia/Singapore
 
 RUN apt-get update
 RUN apt-get install -y xfce4 xfce4-terminal

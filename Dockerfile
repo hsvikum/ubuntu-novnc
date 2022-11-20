@@ -17,9 +17,6 @@ RUN useradd -ms /bin/bash user
 RUN mkdir /.novnc
 RUN chown user:user /.novnc
 
-COPY config /home/user
-RUN chown -R user:user /home/user
-
 RUN apt-get -y install gedit vim
 USER user
 

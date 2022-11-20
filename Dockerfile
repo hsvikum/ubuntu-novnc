@@ -8,6 +8,8 @@ RUN apt-get install -y xfce4 xfce4-terminal
 RUN apt-get install -y novnc
 RUN apt-get install -y tightvncserver websockify
 RUN apt-get install -y wget net-tools wget curl chromium-browser firefox openssh-client git
+RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash -
+RUN apt-get install -y nodejs
 ENV USER root
 
 COPY start.sh /start.sh
